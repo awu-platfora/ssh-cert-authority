@@ -403,7 +403,7 @@ likely sufficient. Copy over the latest ssh-cert-authority binary (you
 can also use the container) and generate a new key for the CA using
 ssh-cert-authority. The nice thing here is that the key is never written
 anywhere unencrypted. It is generated within ssh-cert-authority,
-encrypted via KMS and then written to disk in encrypted form.::
+encrypted via KMS and then written to disk in encrypted form. ::
 
     environment_name=production
     ssh-cert-authority encrypt-key --generate-rsa \
